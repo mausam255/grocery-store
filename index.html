@@ -136,7 +136,7 @@
 
 </footer>
 
-<div id="payment-modal" class="payment-modal">
+<div id="payment-modal" class="payment-modal" style="display:none;">
     <div class="payment-box">
         <h2>Choose Payment Method</h2>
 
@@ -144,6 +144,20 @@
         <button onclick="placeOrder('Card')">Credit Card</button>
         <button onclick="placeOrder('COD')">Cash On Delivery</button>
     </div>
+</div>
+
+<div id="payment-modal" class="payment-modal" style="display:none;">
+
+    <div class="payment-box">
+
+        <h2>Choose Payment Method</h2>
+
+        <button onclick="placeOrder('UPI')">UPI</button>
+        <button onclick="placeOrder('Card')">Credit Card</button>
+        <button onclick="placeOrder('COD')">Cash On Delivery</button>
+
+    </div>
+
 </div>
 
 </body>

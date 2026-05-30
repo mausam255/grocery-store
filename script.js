@@ -285,3 +285,18 @@ themeBtn.addEventListener("click", () => {
         themeBtn.textContent = "🌙";
     }
 });
+
+function checkout(){
+    document.getElementById("payment-modal").style.display = "flex";
+}
+
+function placeOrder(method){
+
+    alert("✅ Order Placed Successfully\nPayment Method: " + method);
+
+    document.getElementById("payment-modal").style.display = "none";
+
+    cart = [];
+    updateCart();
+    localStorage.removeItem("cart");
+}
